@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { Link } from "react-scroll";
 import logo from '../assets/logo.png'
 
 function MobileView({menu, display}){
@@ -7,7 +8,15 @@ function MobileView({menu, display}){
             <div className={`${display} basis-1/2 justify-evenly flex-col text-center delay-300`}>
                 {
                     menu.map((data, i)=>(
-                        <a href="#" key={i} className={`font-medium lg:py-0 py-3 text-white`}>{data}</a>
+                        <Link 
+                            to={data} 
+                            activeClass="active"
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            duration={500}  
+                            key={i} 
+                            className={`font-medium lg:py-0 py-3 text-white`}>{data}</Link>
                     ))
                 }
             </div>
@@ -17,7 +26,7 @@ function MobileView({menu, display}){
 
 function Navbar() {
     const [burger, setBurger] = useState(false)
-    const menu = [ "Home", "About", "Teams", "Research" ]
+    const menu = [ "Home", "Teams", "About Research" ]
 
     const handleBurger = () =>{
         burger === false ? setBurger(true) : setBurger(false)
@@ -36,7 +45,15 @@ function Navbar() {
                 <div className={`lg:flex basis-1/2 justify-evenly hidden`}>
                     {
                         menu.map((data, i)=>(
-                            <a href="#" key={i} className={`font-medium text-white`}>{data}</a>
+                            <Link 
+                            to={data} 
+                            activeClass="active"
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            duration={500}  
+                            key={i} 
+                            className={`font-medium text-white cursor-pointer`}>{data}</Link>
                         ))
                     }
                 </div>

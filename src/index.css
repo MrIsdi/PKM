@@ -6,4 +6,6 @@
 body{
     font-family: 'Fira Sans', sans-serif;
     background-image: url("assets/bg.png");
+    scroll-behavior: smooth;
+    transition: all .5s ease-in-out;
 }
