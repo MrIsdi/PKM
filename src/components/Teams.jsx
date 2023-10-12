@@ -29,7 +29,7 @@ function Teams() {
               <p className="text-xl font-bold drop-shadow-md">
                 Dr. Harmadi, M.Si
               </p>
-              <p className="text-sm">Dosen Pembimbing</p>
+              <p className="text-sm">Dosen Pemdambing</p>
             </div>
           </div>
           <div className="flex gap-x-10 px-8 lg:flex-row flex-col">

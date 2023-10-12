@@ -29,11 +29,11 @@ function Home() {
             See More
           </Link>
         </div>
-        <div data-aos="fade-left">
+        <div data-aos="fade-left" className="md:flex basis-1/4 mr-14 hidden border border-[rgba(255, 255, 255, 0.62)] bg-[#2d2d2d73] backdrop-blur-[10px] rounded-[20px] p-10">
           <img
             src={tomato}
             alt=""
-            className="rounded-xl w-[400px] mr-10 hidden md:block"
+            className="rounded-xl w-[300px] mx-auto hidden md:block"
           />
         </div>
       </section>
