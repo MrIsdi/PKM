@@ -9,7 +9,7 @@ function Home() {
         className="lg:container flex mx-auto  mt-[138px] px-5 justify-between"
         id="Home"
       >
-        <div className="lg:basis-1/2 basis-full">
+        <div className="lg:basis-1/2 basis-full" data-aos="fade-right">
           <p className="lg:text-2xl py-4 text-base text-[#E8E8E8]">
             Selamat Datang di Website Resmi PKM KC
           </p>
@@ -29,8 +29,12 @@ function Home() {
             See More
           </Link>
         </div>
-        <div>
-          <img src={tomato} alt="" className="rounded-xl w-[400px] mr-10" />
+        <div data-aos="fade-left">
+          <img
+            src={tomato}
+            alt=""
+            className="rounded-xl w-[400px] mr-10 hidden md:block"
+          />
         </div>
       </section>
     </React.Fragment>

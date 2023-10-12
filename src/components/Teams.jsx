@@ -25,8 +25,10 @@ function Teams() {
               alt="Dosen"
               className="max-w-fit absolute top-[25%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
             />
-            <div className=" block bg-[#EB7C16] text-white text-center absolute bottom-0 w-full rounded-b-3xl p-1.5">
-              <p className="text-2xl">Dr. Harmadi</p>
+            <div className="block bg-[#EB7C16] text-white text-center absolute bottom-0 w-full rounded-b-3xl p-1.5">
+              <p className="text-xl font-bold drop-shadow-md">
+                Dr. Harmadi, M.Si
+              </p>
               <p className="text-sm">Dosen Pembimbing</p>
             </div>
           </div>
@@ -38,8 +40,10 @@ function Teams() {
                 className="max-w-fit absolute top-[25%] left-[50%] translate-x-[-50%] translate-y-[-40%]"
               />
               <div className="text-xl block bg-[#EB7C16] text-white text-center absolute bottom-0 w-full rounded-b-3xl">
-                <p className="text-[17px] pb-0 pt-0.5">Muhammad Ridho Isdi</p>
-                <p className="text-sm pb-1">Ketua Tim</p>
+                <p className="text-[16px] font-bold drop-shadow-md">
+                  Muhammad Ridho Isdi
+                </p>
+                <p className="text-[17px] pb-1">Ketua Tim</p>
               </div>
             </div>
             <div className="w-[225px] h-[225px] mx-auto mt-20 bg-[#D9D9D9] rounded-3xl relative">
@@ -49,7 +53,9 @@ function Teams() {
                 className="max-w-fit absolute top-[25%] left-[50%] translate-x-[-50%] translate-y-[-40%]"
               />
               <div className="text-xl block bg-[#EB7C16] text-white text-center absolute bottom-0 w-full rounded-b-3xl">
-                <p className="text-[20px] pb-0 pt-0.5">Abi Syaibah</p>
+                <p className="text-[20px] font-bold drop-shadow-lg">
+                  Abi Syaibah
+                </p>
                 <p className="text-sm pb-1">Anggota 1</p>
               </div>
             </div>
@@ -60,7 +66,9 @@ function Teams() {
                 className="max-w-fit absolute top-[25%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
               />
               <div className="text-xl block bg-[#EB7C16] text-white text-center absolute bottom-0 w-full rounded-b-3xl">
-                <p className="text-[20px] pt-0.5">Tuti Alawiya</p>
+                <p className="text-[20px] font-bold drop-shadow-lg">
+                  Tuti Alawiya
+                </p>
                 <p className="text-sm pb-0.5">Anggota 2</p>
               </div>
             </div>
@@ -71,7 +79,9 @@ function Teams() {
                 className="max-w-fit absolute top-[25%] left-[50%] translate-x-[-49.7%] translate-y-[-45%]"
               />
               <div className="text-xl block bg-[#EB7C16] text-white text-center absolute bottom-0 w-full rounded-b-3xl">
-                <p className="text-[20px] pt-0.5">M. Farhan Ramadhan</p>
+                <p className="text-[16px] font-bold drop-shadow-lg">
+                  M. Farhan Ramadhan
+                </p>
                 <p className="text-sm pb-1">Anggota 3</p>
               </div>
             </div>

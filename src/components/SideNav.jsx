@@ -3,7 +3,7 @@ import React from "react"
 function SideNav() {
   return (
     <React.Fragment>
-      <div>Hi Ini Dashboard</div>
+      <div>H1 Dashboard</div>
     </React.Fragment>
   )
 }
