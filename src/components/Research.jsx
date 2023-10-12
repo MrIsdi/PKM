@@ -29,6 +29,8 @@ function Research() {
             <img src={alat} className="bg-full" alt="" />
           </div>
         </div>
+
+        <div></div>
       </section>
     </React.Fragment>
   )

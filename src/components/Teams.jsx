@@ -6,7 +6,6 @@ import user3 from "../assets/user3.png"
 import user4 from "../assets/user4.png"
 
 function Teams() {
-  const nama = ["Muhammad Ridho Isdi", "Abi Syaibah "]
   return (
     <React.Fragment>
       <section
