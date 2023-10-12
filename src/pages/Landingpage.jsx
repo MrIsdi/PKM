@@ -4,8 +4,10 @@ import Home from '../components/Home'
 import Navbar from '../components/Navbar'
 import Research from '../components/Research'
 import Teams from '../components/Teams'
+import bg from "../assets/bg.png"
 
 function Landingpage() {
+    document.body.style.background = `url(${bg})`
     return (
         <React.Fragment>
             <Navbar />
