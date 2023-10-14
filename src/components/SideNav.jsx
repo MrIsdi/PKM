@@ -1,6 +1,7 @@
 import React from "react"
 import logo from '../assets/logo.png'
 import Button from "./Button"
+import { Link } from "react-router-dom";
 
 function SideNav() {
   return (
@@ -15,9 +16,13 @@ function SideNav() {
             <p>Official Website</p>
           </div>
           {/* Button SideNav */}
-          <div className="flex flex-col">
-          <Button text='Live Cam'/>
-          <Button text='Data Prototipe'/>
+          <div className="flex flex-col items-start">  
+            <Link to="/dashboard/livecam">
+                <Button text='Live Cam' />
+            </Link>
+            <Link to='/dashboard/data-tumbuhan'>
+              <Button text='Data Prototipe'/>
+            </Link>
           </div>
         </div>
       </div>

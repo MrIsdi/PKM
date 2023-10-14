@@ -7,7 +7,6 @@ function Dashboard() {
     <React.Fragment>
       <div className="flex">
         <SideNav />
-        <Livecam />
       </div>
     </React.Fragment>
   )
