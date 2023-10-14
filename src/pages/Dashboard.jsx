@@ -1,10 +1,14 @@
 import React from "react"
 import SideNav from "../components/SideNav"
+import Livecam from '../components/Livecam'
 
 function Dashboard() {
   return (
     <React.Fragment>
-      <SideNav />
+      <div className="flex">
+        <SideNav />
+        <Livecam />
+      </div>
     </React.Fragment>
   )
 }
