@@ -4,7 +4,7 @@ function Livecam() {
   return (
     <React.Fragment>
       <div className="text-white">
-        Live Cam
+        <img src="" alt="" />
       </div>
     </React.Fragment>
   )
