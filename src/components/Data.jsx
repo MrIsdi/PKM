@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-function Data() {
+function Data({style}) {
   const [data, setData] = useState([]); // Menyimpan data dari API
   const [currentPage, setCurrentPage] = useState(1); // Halaman aktif
   const [itemsPerPage] = useState(10); // Jumlah item per halaman
@@ -46,10 +46,11 @@ function Data() {
     setCurrentPage(pageNumber);
   };
 
+
   return (
-    <div className="text-white flex flex-col justify-center items-center">
-      <div className="flex justify-center">
-        <table className="table-auto text-white text-center mt-1">
+    <div className={`text-white flex flex-col justify-center items-center ${style}`}>
+      <div className="flex justify-center  border border-[rgba(255, 255, 255, 0.62)] bg-[#2d2d2d73] backdrop-blur-[10px] rounded-[20px] p-5">
+        <table className="table-auto text-white text-center mt-1 ">
           <thead>
             <tr>
               <th className="border-y px-4 py-2">No</th>

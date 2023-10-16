@@ -5,7 +5,7 @@ import Landingpage from "./pages/Landingpage"
 import Livecam from "./components/Livecam"
 import AOS from "aos"
 import "aos/dist/aos.css"
-import Data from "./components/Data"
+import DashboardCam from "./pages/DashboardCam"
 
 function App() {
   useEffect(() => {
@@ -19,9 +19,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landingpage />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path='/dashboard/livecam' element={<Livecam/>} />
-          <Route path='/dashboard/data-tumbuhan' element={<Data />} />
+          <Route path="/sensor" element={<Dashboard />} />
+          <Route path='/livecam' element={<DashboardCam/>} />
         </Routes>
       </BrowserRouter>
     </React.Fragment>
