@@ -12,14 +12,14 @@ function Teams() {
         className="mt-72 lg:container mx-auto rounded-[108px] border border-[rgba(255, 255, 255, 0.62)] bg-[#2d2d2d73] backdrop-blur-[10px] py-14"
         id="Teams"
       >
-        <div>
+        <div data-aos="fade">
           <p className="text-4xl text-[#D9D9D9] text-center">MEET OUR</p>
           <p className="text-5xl font-[700] text-white text-center tracking-[8.801px]">
             TEAMS PROFILE
           </p>
         </div>
-        <div>
-          <div className="w-[225px] h-[225px] mx-auto mt-20 bg-[#D9D9D9] rounded-3xl relative">
+        <div >
+          <div className="w-[225px] h-[225px] mx-auto mt-20 bg-[#D9D9D9] rounded-3xl relative" data-aos="flip-right">
             <img
               src={dosen}
               alt="Dosen"
@@ -32,8 +32,8 @@ function Teams() {
               <p className="text-sm">Dosen Pemdambing</p>
             </div>
           </div>
-          <div className="flex gap-x-10 px-8 lg:flex-row flex-col">
-            <div className="w-[225px] h-[225px] mx-auto mt-20 bg-[#D9D9D9] rounded-3xl relative">
+          <div className="flex gap-x-10 px-8 lg:flex-row flex-col" >
+            <div className="w-[225px] h-[225px] mx-auto mt-20 bg-[#D9D9D9] rounded-3xl relative" data-aos="flip-right">
               <img
                 src={user1}
                 alt="Dosen"
@@ -46,7 +46,7 @@ function Teams() {
                 <p className="text-[17px] pb-1">Ketua Tim</p>
               </div>
             </div>
-            <div className="w-[225px] h-[225px] mx-auto mt-20 bg-[#D9D9D9] rounded-3xl relative">
+            <div className="w-[225px] h-[225px] mx-auto mt-20 bg-[#D9D9D9] rounded-3xl relative" data-aos="flip-right">
               <img
                 src={user2}
                 alt="Dosen"
@@ -59,7 +59,7 @@ function Teams() {
                 <p className="text-sm pb-1">Anggota 1</p>
               </div>
             </div>
-            <div className="w-[225px] h-[225px] mx-auto mt-20 bg-[#D9D9D9] rounded-3xl relative">
+            <div className="w-[225px] h-[225px] mx-auto mt-20 bg-[#D9D9D9] rounded-3xl relative" data-aos="flip-right">
               <img
                 src={user3}
                 alt="Dosen"
@@ -72,7 +72,7 @@ function Teams() {
                 <p className="text-sm pb-0.5">Anggota 2</p>
               </div>
             </div>
-            <div className="w-[225px] h-[225px] mx-auto mt-20 bg-[#D9D9D9] rounded-3xl relative">
+            <div className="w-[225px] h-[225px] mx-auto mt-20 bg-[#D9D9D9] rounded-3xl relative" data-aos="flip-right">
               <img
                 src={user4}
                 alt="Dosen"

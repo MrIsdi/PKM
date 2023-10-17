@@ -8,7 +8,7 @@ function About() {
       <section className="mt-72" id="About Research">
         <a
           href="/livecam"
-          className="block w-fit mx-auto px-6 py-3 rounded-lg lg:text-4xl text-xl text-white hover:text-black font-bold text-center bg-[#EB8916] hover:shadow-[0px_3px_13px_3px_#EB7C16] transition ease-in-out delay-50"
+          className="block w-fit mx-auto px-10 py-3 rounded-full lg:text-3xl text-xl text-white  font-bold text-center bg-[#EB8916] hover:shadow-[0px_3px_13px_3px_#EB7C16] transition ease-in-out delay-50"
         >
           LINK TO DASHBOARD
         </a>
@@ -22,9 +22,9 @@ function About() {
           <a
             href="https://www.instagram.com/pkmkc_cvtomato/"
             target="_blank"
-            className="flex items-center gap-2 text-center mb-2"
+            className="flex items-center gap-2 text-center"
           >
-            <FontAwesomeIcon icon={faInstagram} />
+            <FontAwesomeIcon icon={faInstagram} size="xl"/>
             <span className="font-semibold">@pkmkc_cvtomato</span>
           </a>
         </div>

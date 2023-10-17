@@ -1,21 +1,20 @@
 import React, { useEffect } from "react";
 import logo from "../assets/logo.png";
 import Button from "./Button";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHouse } from "@fortawesome/free-solid-svg-icons";
 
 function SideNav() {
-  useEffect(()=>{
+  useEffect(() => {
     const url = window.location.href;
 
-  const buttonSideBar = document.querySelectorAll(".url")
-  buttonSideBar.forEach(a =>{
-    if(a.href == url){
-      a.classList.add("shadow-[-1px_-1px_28px_0px_rgb(235,124,22)]")
-    }
-  })
-  }, [])
+    const buttonSideBar = document.querySelectorAll(".url");
+    buttonSideBar.forEach((a) => {
+      if (a.href == url) {
+        a.classList.add("shadow-[-1px_-1px_28px_0px_rgb(235,124,22)]");
+      }
+    });
+  }, []);
   return (
     <React.Fragment>
       <div className="w-[250px] h-[100%] fixed bg-[#2d2d2d73] backdrop-blur-[100px] flex flex-col justify-between">
@@ -29,16 +28,26 @@ function SideNav() {
             </div>
             {/* Button SideNav */}
             <div className="flex flex-col items-center justify-center">
-              <Button text="Live Cam" link="/livecam" style="w-[168px]" />
-              <Button text="Data Prototipe" link="/sensor" style="w-[168px]"/>
+              <Button
+                text="Live Cam"
+                link="/livecam"
+                style="w-[168px] tracking-[3.2px]"
+              />
+              <Button
+                text="Data Prototipe"
+                link="/sensor"
+                style="w-[168px] tracking-[0.5px] text-sm"
+              />
             </div>
-          </div>  
+          </div>
         </div>
         <div>
-            <Button link="/" style="flex items-center justify-center mx-auto mb-10 text-[15px] w-[70px] h-[50px]">
-              <FontAwesomeIcon icon={faHouse} className="mx-auto" />
-            </Button>
-          </div>
+          <Button
+            link="/"
+            style="flex items-center justify-center mx-auto mb-10 text-[15px] w-fit h-[50px] rounded-full"
+            text='Back to home'
+          />
+        </div>
         {/* <div className="text-white font-serif  text-center flex flex-col ites center p-2">
         <p>Departemen Fisika</p>
         <p className="font-bold text-lg">Fakultas Matematika dan Ilmu Pengetahuan Alam</p>
