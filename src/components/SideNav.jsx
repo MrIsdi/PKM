@@ -44,9 +44,11 @@ function SideNav() {
         <div>
           <Button
             link="/"
-            style="flex items-center justify-center mx-auto mb-10 text-[15px] w-fit h-[50px] rounded-full"
-            text='Back to home'
-          />
+            style="flex items-center justify-center mx-auto mb-10 text-[15px] w-fit h-[5  0px] rounded-md"
+            icon ={<FontAwesomeIcon icon={faHouse} size="xl" className=" mb-2 -auto"/>}
+          >
+          
+          </Button>
         </div>
         {/* <div className="text-white font-serif  text-center flex flex-col ites center p-2">
         <p>Departemen Fisika</p>

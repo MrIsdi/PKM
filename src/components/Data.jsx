@@ -50,10 +50,11 @@ function Data({style}) {
   return (
     <div className={`text-white flex flex-col justify-center items-center ${style}`}>
       <div className="flex justify-center  border border-[rgba(255, 255, 255, 0.62)] bg-[#2d2d2d73] backdrop-blur-[10px] rounded-[20px] p-5">
-        <table className="table-auto text-white text-center mt-1 ">
+        <table className="table-fixed text-white text-center mt-1 ">
           <thead>
             <tr>
               <th className="border-y px-4 py-2">No</th>
+              <th className="border-y px-4 py-2">Waktu</th>
               <th className="border-y px-4 py-2">Suhu</th>
               <th className="border-y px-4 py-2">Kelembapan</th>
               <th className="border-y px-4 py-2">Intensitas Cahaya</th>
@@ -67,31 +68,34 @@ function Data({style}) {
                 <td className="px-4 py-2">
                   {(currentPage - 1) * itemsPerPage + i + 1}
                 </td>
+                <td>
+                  {item.waktu}
+                </td>
                 <td className=" px-4 py-2">{item.suhu}</td>
                 <td className=" px-4 py-2">{item.lembap}</td>
                 <td className=" px-4 py-2">{item.cahaya}</td>
                 {item.kipas === "Hidup" ? (
                   <td>
-                    <div className="bg-[#BBF3E0] text-[#12A474] w-fit px-3 py-1 m-auto rounded-md">
+                    <div className="bg-[#BBF3E0] text-[#12A474] w-15 px-3 py-1 m-auto rounded-md">
                       {item.kipas}
                     </div>
                   </td>
                 ) : (
                   <td>
-                    <div className="bg-[#FFF3DB] text-[#F2994A] w-fit px-3 py-2 m-auto rounded-md">
+                    <div className="bg-[#FFF3DB] text-[#F2994A] w-15 px-3 py-1 m-auto rounded-md">
                       {item.kipas}
                     </div>
                   </td>
                 )}
                 {item.mist === "Hidup" ? (
                   <td>
-                    <div className="bg-[#BBF3E0] text-[#12A474] w-fit px-3 py-1 m-auto rounded-md">
+                    <div className="bg-[#BBF3E0] text-[#12A474] w-[70px] px-2 py-1 m-auto rounded-md">
                       {item.mist}
                     </div>
                   </td>
                 ) : (
                   <td>
-                    <div className="bg-[#FFF3DB] text-[#F2994A] w-fit px-3 py-2 m-auto rounded-md">
+                    <div className="bg-[#FFF3DB] text-[#F2994A] w-[70px] px-2 py-1 m-auto rounded-md">
                       {item.mist}
                     </div>
                   </td>

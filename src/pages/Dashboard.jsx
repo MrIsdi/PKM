@@ -24,10 +24,6 @@ function Dashboard() {
       });
   }, []);
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
-
   if (error) {
     return <div>Error: {error.message}</div>;
   }
@@ -36,7 +32,7 @@ function Dashboard() {
     <React.Fragment>
       <div className="flex">
         <SideNav />
-        <div className="flex flex-col items-center justify-center ml-[430px] mt-10 font-bold ">
+        <div className="flex flex-col items-center justify-center ml-[350px] mt-10 font-bold ">
           <div className="text-white text-[30px] bg-[#113946] cursor-pointer hover:shadow-[-1px_-1px_28px_0px_rgb(17,57,70)] px-4 py-2 rounded-md mt-2 uppercase font-bold">
             Latest Data Monitoring 
           </div>
@@ -86,7 +82,13 @@ function Dashboard() {
               </div>
             </div>
           </div>
-          <Data />
+          {
+            loading === true?(
+              <div className="text-white text-4xl">Loading...</div>
+            ):(
+              <Data />
+            )
+          }
         </div>
       </div>
     </React.Fragment>
